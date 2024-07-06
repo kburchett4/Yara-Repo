@@ -1,0 +1,285 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.App.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.App-header {
+  background-color: #2c3e50;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-header nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-header nav a:hover {
+  text-decoration: underline;
+}
+
+.App-header select, .App-header input {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.App-header select:hover, .App-header input:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.App-header button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.App-header button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.main-content {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.directory-tree {
+  width: 20%;
+  background-color: #ecf0f1;
+  padding: 10px;
+  overflow-y: auto;
+  border-right: 1px solid #bdc3c7;
+  font-size: 12px;
+}
+
+.directory-tree ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.directory-tree li {
+  margin: 5px 0;
+}
+
+.directory-tree li .file-button {
+  background: none;
+  border: none;
+  color: #2c3e50;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1em;
+}
+
+.directory-tree li .file-button:hover {
+  color: #3498db;
+}
+
+.folder-name {
+  font-weight: bold;
+}
+
+.rules-viewer {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.metadata {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.metadata h3 {
+  margin-top: 0;
+}
+
+.metadata table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metadata td {
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.meta-key {
+  font-weight: bold;
+  text-align: right;
+  width: 20%;
+}
+
+.meta-value {
+  text-align: left;
+  width: 80%;
+}
+
+.export-buttons {
+  margin-bottom: 20px;
+}
+
+.export-buttons button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.export-buttons button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.rules-viewer pre {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.integration-page {
+  padding: 20px;
+  background-color: #f4f4f4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.integration-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.integration-page section {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.integration-page h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #3498db;
+}
+
+.integration-page ul, .integration-page ol {
+  padding-left: 20px;
+}
+
+.integration-page ul li, .integration-page ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.integration-page a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.integration-page a:hover {
+  text-decoration: underline;
+}
+
+/* Dark theme styles */
+.App.dark .App-header {
+  background-color: #1e1e1e;
+}
+
+.App.dark .App-header nav a {
+  color: #bb86fc;
+}
+
+.App.dark .App-header select, .App.dark .App-header input {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.App.dark .App-header button {
+  background-color: #bb86fc;
+}
+
+.App.dark .directory-tree {
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+}
+
+.App.dark .directory-tree li .file-button {
+  color: #bb86fc;
+}
+
+.App.dark .rules-viewer {
+  background-color: #121212;
+  color: white;
+}
+
+.App.dark .metadata {
+  background-color: #1e1e1e;
+}
+
+.App.dark .metadata table {
+  color: white;
+}
+
+.App.dark .export-buttons button {
+  background-color: #bb86fc;
+}
+
+.App.dark .rules-viewer pre {
+  background-color: #1e1e1e;
+}
+
+.App.dark .integration-page {
+  background-color: #121212;
+  color: white;
+}
+
+.App.dark .integration-page section {
+  background-color: #1e1e1e;
+}
+
+.App.dark .integration-page h1, 
+.App.dark .integration-page h2 {
+  color: #bb86fc;
+}
+
+.App.dark .integration-page a {
+  color: #bb86fc;
+}
+
+.App.dark .integration-page a:hover {
+  color: #9f6dfb;
+}

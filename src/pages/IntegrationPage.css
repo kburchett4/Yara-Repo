@@ -1,0 +1,79 @@
+.integration-page {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.integration-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.integration-page section {
+  margin-bottom: 40px;
+  background-color: #494848;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.integration-page h2 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.integration-page ul, .integration-page ol {
+  padding-left: 20px;
+}
+
+.integration-page ul li, .integration-page ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.integration-page a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.integration-page a:hover {
+  text-decoration: underline;
+}
+
+.integration-page p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Dark theme styles */
+.App.dark .integration-page {
+  background-color: #121212;
+  color: rgba(109, 102, 102, 0.328);
+}
+
+.App.dark .integration-page section {
+  background-color: #1e1e1e;
+}
+
+.App.dark .integration-page h1, 
+.App.dark .integration-page h2 {
+  color: #bb86fc;
+}
+
+.App.dark .integration-page a {
+  color: #bb86fc;
+}
+
+.App.dark .integration-page a:hover {
+  color: #9f6dfb;
+}

@@ -1,0 +1,36 @@
+.directory-tree {
+    width: 20%;
+    background-color: #ecf0f1;
+    padding: 10px;
+    overflow-y: auto;
+    border-right: 1px solid #bdc3c7;
+    font-size: 12px;
+  }
+  
+  .directory-tree ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .directory-tree li {
+    margin: 5px 0;
+  }
+  
+  .directory-tree li .file-button {
+    background: none;
+    border: none;
+    color: #2c3e50;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .directory-tree li .file-button:hover {
+    color: #3498db;
+  }
+  
+  .folder-name {
+    font-weight: bold;
+  }
+  
